@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication10.Models.Movie>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>CINEMANIA</h1>
+    <p class="lead">
+        Cinemania as a website where users can rent movies from various genres.
+    </p>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Movies</h2>
+            <p>
+                Welcome to our world of movies! Rent from any genre, anytime. Dive into endless cinematic delights with us!
+            </p>
+            <img src="~/Content/Images/istockphoto-1337214283-612x612.jpg" style="max-width:370px" height="100px" />
+            
+            @Html.ActionLink("View list of movies", "Index", "Movies")
+
+
+        </div>
+        <div class="col-md-6">
+            <h2>TV Shows</h2>
+            <p>Explore a vast array of TV shows alongside movies. Rent your favorites and indulge in limitless binge-worthy content.</p>
+            
+            <img src="~/Content/Images/67390928-movie-tickets-3d-glasses-paper-box-spilled-popcorn-and-movie-clapper-on-a-wooden-background.jpg" style="max-width:370px"height="100px" />
+
+            @Html.ActionLink("View list of TV Shows", "Index", "TVShows")
+
+        </div>
+        
+    </div>
+    
+</div>
